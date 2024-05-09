@@ -46,19 +46,24 @@ ul {
   padding-inline-start: 20px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
-}
-
 .square {
   background: #fff;
   border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square-winner {
+  background: #FF33B5;
+  border: 1px solid #FF33B5;
   float: left;
   font-size: 24px;
   font-weight: bold;
@@ -87,4 +92,37 @@ body {
 
 .game-info {
   margin-left: 20px;
+}
+
+
+.btn-holder{
+  width: 50px;
+  height:26px;
+  border-radius: 18px;
+  background-color: #F7D6A3;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.btn-holder .btn-circle {
+  background-color: #6B5E8A;
+  border-radius:50%;
+  width:20px;
+  height:20px;
+  transform: translateX(0px);
+  transition: 300ms;
+}
+
+.btn-holder .active{
+  background-color: #e36c22;
+  transform: translateX(20px);
+  transition: 300ms;
+}
+
+.btn-holder input[type="checkbox"]{
+  display: none;
 }
